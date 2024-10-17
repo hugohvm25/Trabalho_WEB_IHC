@@ -6,28 +6,102 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Melhor site do Mundo</title>
     <link rel="icon" type="image/jpeg" href="lambda.jpg">
+
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        
+        /* Style the header */
+        header {
+            background-color: #666;
+            padding: 1px;
+            text-align: center;
+            font-size: 15px;
+            color: white;
+        }
+        
+        /* Container for flexboxes */
+        section {
+            text-align: center;
+            display: -webkit-flex;
+            display: flex;
+        }
+        
+        /* Style the navigation menu */
+        nav {
+            text-align: center;
+            -webkit-flex: 1;
+            -ms-flex: 1;
+            flex: 1;
+            background: #ccc;
+            padding: 10px;
+        }
+        
+        /* Style the list inside the menu */
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        
+        /* Style the content */
+        article {
+            -webkit-flex: 3;
+            -ms-flex: 3;
+            flex: 3;
+            background-color: #f1f1f1;
+            padding: 10px;
+        }
+        
+        /* Style the footer */
+        footer {
+            background-color: #777;
+            padding: 1px;
+            text-align: center;
+            color: white;
+        }
+        
+        /* Responsive layout - makes the menu and the content (inside the section) sit on top of each other instead of next to each other */
+        @media (max-width: 2000px) {
+        section {
+                -webkit-flex-direction: column;
+                flex-direction: column;
+        }
+        }
+    </style>
+
 </head>
 
-<body>
+<body style="background-color:rgb(red, green, blue)">
     <header>
-        <h1><a href="index.html"><img src="lambda.jpg" alt="Logo da Empresa" width="50">
+        <h1><a href="/Site_IHC/index.html"><img src="lambda.jpg" alt="Logo da Empresa" width="50">
         <br></a>Bem-vindo ao Melhor Site do Mundo</h1>
     </header>
 
+    <nav>
+        <a href="/Site_IHC/index.html">Página inicial</a>
+        <a href="/Site_IHC/descrição.html">Sobre nós</a>
+        <a href="/Site_IHC/serviços.html">Serviços</a>
+        <a href="/Site_IHC/contato.html">Entre em contato</a>
+    </nav>
 
     <section>
+        <h2>Bem-vindo à Nossa Empresa</h2>
         <p>Aqui você encontrará a melhor IHC do mercado.</p>
+        
+        <h2>Nossa Missão</h2>
+        <p>Proporcionar a melhor plataforma IHC que uma empresa 
+            e usuários podem encontrar na internet.</p>
+
     </section>
 
-    <nav>
-        <table border="1" width="30%">
-            <tr>
-                <th><a href="/Site_IHC/descrição.html">Sobre nós</a></th>
-                <th><a href="/Site_IHC/serviços.html">Serviços</a></th>
-                <th><a href="/Site_IHC/contato.html">Entre em contato</a></th>
-            </tr>
-        </table>
-    </nav>
+    <footer>
+        <h6>Criado e desenvolvido por @hgmello25</h6>
+    </footer>
 
 </body>
 </html>

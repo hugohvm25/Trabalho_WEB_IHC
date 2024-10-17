@@ -1,33 +1,98 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 
 <head>
     <link rel="icon" type="image/jpeg" href="lambda.jpg">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Serviços</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        
+        /* Style the header */
+        header {
+            background-color: #666;
+            padding: 1px;
+            text-align: center;
+            font-size: 15px;
+            color: white;
+        }
+        
+        /* Container for flexboxes */
+        section {
+            text-align: center;
+            display: -webkit-flex;
+            display: flex;
+        }
+        
+        /* Style the navigation menu */
+        nav {
+            text-align: center;
+            -webkit-flex: 1;
+            -ms-flex: 1;
+            flex: 1;
+            background: #ccc;
+            padding: 10px;
+        }
+        
+        /* Style the list inside the menu */
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        
+        /* Style the content */
+        article {
+            -webkit-flex: 3;
+            -ms-flex: 3;
+            flex: 3;
+            background-color: #f1f1f1;
+            padding: 10px;
+        }
+        
+        /* Style the footer */
+        footer {
+            background-color: #777;
+            padding: 1px;
+            text-align: center;
+            color: white;
+        }
+        
+        /* Responsive layout - makes the menu and the content (inside the section) sit on top of each other instead of next to each other */
+        @media (max-width: 2000px) {
+        section {
+                -webkit-flex-direction: column;
+                flex-direction: column;
+        }
+        }
+    </style>
+
 </head>
 
 <body>
     <header>
-        <h1><a href="index.html"><img src="lambda.jpg" alt="Logo da Empresa" width="50">
+        <h1><a href="/Site_IHC/index.html"><img src="lambda.jpg" alt="Logo da Empresa" width="50">
         <br></a>Bem-vindo ao Melhor Site do Mundo</h1>
     </header>
 
     <nav>
-        <table border="1" width="30%">
-            <tr>
-                <th><a href="/Site_IHC/descrição.html">Sobre nós</a></th>
-                <th><a href="/Site_IHC/serviços.html">Serviços</a></th>
-                <th><a href="/Site_IHC/contato.html">Entre em contato</a></th>
-            </tr>
-        </table>
+        <a href="/Site_IHC/index.html">Página inicial</a>
+        <a href="/Site_IHC/descrição.html">Sobre nós</a>
+        <a href="/Site_IHC/serviços.html">Serviços</a>
+        <a href="/Site_IHC/contato.html">Entre em contato</a>
     </nav>
 
     <section>
         <h2>Nossos Serviços</h2>
         
-        <table border="2" width="50%">
+        <table border="2" width="50%" align="center">
             <thead>
                 <tr>
                     <th>Serviço</th>
@@ -35,6 +100,7 @@
                     <th>Preço</th>
                 </tr>
             </thead>
+
             <tbody>
                 <tr>
                     <td>Desenvolvimento Web</td>
@@ -53,16 +119,22 @@
                 </tr>
             </tbody>
         </table>
-    </section>
 
-    <div>
-        <p>Caso queira pode entrar em contato conosco</p>
-        <a href="/contato.html">Envie sua dúvida</a>
-    </div>
+        <div>
+            <p>Entre em contato conosco para sanar sua dúvida.</p>
+            <a href="/contato.html">Envie sua dúvida</a>
+        </div> 
+        
+        <br>
+        <a href="/Site_IHC/index.html">Voltar para a Página Principal</a>
+
+    </section>  
 
     <br>
 
-    <a href="index.html">Voltar para a Página Principal</a>
+    <footer>
+        <h6>Criado e desenvolvido por @hgmello25</h6>
+    </footer>
 
 </body>
 </html>

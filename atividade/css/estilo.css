@@ -1,0 +1,27 @@
+#topo {
+    background-color: #ff9d0b;
+    margin: 5px;
+}
+
+body {
+    background-color: rgb(218, 218, 218);
+}
+
+
+h2 {  
+    color: rgb(0, 0, 0);
+    text-align: center;
+    height: 100px;
+    wi
+}
+
+
+.text-white {
+    color: rgb(255, 255, 255);
+    text-align: center;
+}
+  
+.p {
+font-family: verdana;
+font-size: 20px;
+}
